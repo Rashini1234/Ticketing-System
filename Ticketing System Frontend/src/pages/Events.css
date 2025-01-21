@@ -1,0 +1,75 @@
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    width: 100vw; 
+
+  }
+  
+  .events-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    margin-top: 5rem; 
+
+    text-align: center;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .event-card p {
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .buy-ticket-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-ticket-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .no-events {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 2rem;
+  }
+  
